@@ -3,10 +3,8 @@ body {
   color:#59A7E1FF;
 }
 
-.bot li {
-  list-style: none;
-  float: left;
-  padding: 0;
+.bot a {
+  text-decoration: none;
 }
 
 .logo_insta {

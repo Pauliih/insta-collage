@@ -1,15 +1,18 @@
 function drag(ev) {
-  ev.dataTransfer.setData('img', ev.target.id); // INDICAMOS EL TIPO DE DATO (FORMATO) QUE VAMOS A TRANSFERIR 
+  ev.dataTransfer.setData('text', ev.target.id); 
 }
 
-function allowDrop(ev){
+function allowDrop(ev) {
   ev.preventDefault();
 }
 
 function drop(ev) {
   ev.preventDefault();
-  var idPhoto = ev.dataTransfer.getData('img'); // RECUPERAMOS LOS DATOS 
-  ev.target.appendChild(document.getElementById(idPhoto));
+  var idPhoto = ev.dataTransfer.getData('text'); // RECUPERAMOS LOS DATOS
+  var srcPhoto = document.getElementById(idPhoto).src;
+  // var srcPhoto = photo.getAttribute('src');
+  // creo un nuevo elemento con la ruta de la imagen que tomé
+  ev.target.innerHTML = "<img class='img-fluid' src='" + srcPhoto + "'>";
 }
 
 // $('.col-3 img').draggable( {
