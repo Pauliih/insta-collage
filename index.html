@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Insta Collage</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container-fluid collage">
+    <div class="row clearfix">
+      <div class="left-img col-6">
+        <div class="col-12" id="image1" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+        <div class="col-12" id="image2" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+      </div>
+      <div class="right-img col-6">
+        <div class="col-12" id="image3" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+      </div>
+    </div> 
+  </div>
+
+  <div class="container-fluid title-mid">
+    <div class="row">
+      <div class="col-12">
+      <img class="fluid-img text-center logo_insta" src="assets/img/insta2.png" alt="logo-insta">
+        <h2 class="text-center">PHOTO BOOTH</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid gallery">
+    <div class="row">
+      <div class="col-3">
+        <img id="img1" ondragstart="drag(event)" draggable="true" class="img-fluid" src="assets/img/5499a2fcba3795855ff3f307_4_19-1419355057145.jpg" alt="">
+      </div>
+      <div class="col-3">
+        <img id="img2" ondragstart="drag(event)" draggable="true" class="img-fluid" src="assets/img/banana.jpg" alt="">
+      </div>
+      <div class="col-3">
+        <img id="img3" ondragstart="drag(event)" draggable="true" class="img-fluid" src="assets/img/fresas.jpg" alt="">
+      </div>
+      <div class="col-3">
+        <img id="img4" ondragstart="drag(event)" draggable="true" class="img-fluid" src="assets/img/La-cereza-como-fruta-beneficiosa-portada-copia.jpg" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <img id="img5" ondragstart="drag(event)" draggable="true" class="img-fluid" src="assets/img/miraculina.jpg" alt="">
+      </div>
+      <div class="col-3">
+        <img id="img6" ondragstart="drag(event)" draggable="true" class="img-fluid" src="assets/img/yoghurt_fruta.jpg" alt="">
+      </div>
+      <div class="col-3">
+        <img id="img7" ondragstart="drag(event)" draggable="true" class="img-fluid" src="assets/img/5499a2fcba3795855ff3f307_4_19-1419355057145.jpg" alt="">
+      </div>
+      <div class="col-3">
+        <img id="img8" ondragstart="drag(event)" draggable="true" class="img-fluid" src="assets/img/fresas.jpg" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <img id="img9" ondragstart="drag(event)" draggable="true" class="img-fluid" src="assets/img/banana.jpg" alt="">
+      </div>
+      <div class="col-3">
+        <img id="img10" ondragstart="drag(event)" draggable="true" class="img-fluid" src="assets/img/La-cereza-como-fruta-beneficiosa-portada-copia.jpg" alt="">
+      </div>
+      <div class="col-3">
+        <img id="img11" ondragstart="drag(event)" draggable="true" class="img-fluid" src="assets/img/miraculina.jpg" alt="">
+      </div>
+      <div class="col-3">
+        <img id="img12" ondragstart="drag(event)" draggable="true" class="img-fluid" src="assets/img/yoghurt_fruta.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4">
+       <a href="#" class="text-center">CAMERA ROLL</a> 
+      </div>
+      <div class="col-4">
+        <a href="#" class="text-center">FACES</a>
+      </div>
+      <div class="col-4">
+        <a href="#" class="text-center">RECENTS</a>
+      </div>
+    </div>
+  </div>
+
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script
+  src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
