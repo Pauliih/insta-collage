@@ -27,6 +27,10 @@ body {
   margin: 0;
 }
 
+.gallery .row div img {
+  cursor: move;
+}
+
 #image1, #image2 {
   height: 23vh;
   background-color: #26272BFF;
@@ -51,7 +55,7 @@ body {
   padding: 0;
 }
 
-.collage {
+#collage {
   margin: 0;
   padding: 0;
   background-color: #fff;
