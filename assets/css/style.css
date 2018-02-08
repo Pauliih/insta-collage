@@ -7,9 +7,19 @@ body {
   text-decoration: none;
 }
 
+.title-mid {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 .logo_insta {
   width: 8%;
   float: left;
+}
+
+.img-collage { 
+  width: 100%;
+  height: 100%;  
 }
 
 .gallery .row div{
@@ -18,32 +28,40 @@ body {
 }
 
 #image1, #image2 {
-  height: 150px;
+  height: 23vh;
   background-color: #26272BFF;
-  color: #fff;
 }
 
 #image1 {
-  margin-bottom: 0.2em;
+  margin-bottom: 0.2em!important;
+}
+
+#image2 {
+  margin-top: 0.2em!important;
 }
 
 #image3 {
-  height: 303px;
+  height: 100%;
   background-color: #26272BFF;
+}
+
+#image1, #image2, #image3 {
   color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 .collage {
   margin: 0;
-  padding: 0em;
+  padding: 0;
   background-color: #fff;
 /*  overflow: hidden;
 */}
 
 .left-img {
-  padding-right: 0.2em; 
+  padding-right: 0.4em; 
 }
 
 .right-img {
-  padding-left: 0.2em;
+  padding-left: 0;
 }
